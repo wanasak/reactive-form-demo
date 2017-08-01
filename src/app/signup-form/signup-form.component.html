@@ -8,6 +8,7 @@
       id="email">
       <div *ngIf="email.touched && email.invalid " class="alert alert-danger">
         <div *ngIf="email.errors.required">Email is required</div>
+        <div *ngIf="email.errors.cannotContainSpace">Email cannot contain space</div>
         <div *ngIf="email.errors.minlength">Email should be minimum 3 characters</div>
       </div>
   </div>
