@@ -21,4 +21,10 @@ export class SignupFormComponent {
   get email() {
     return this.form.get('email');
   }
+
+  login() {
+    this.form.setErrors({
+      invalidLogin: true
+    });
+  }
 }
